@@ -5,4 +5,4 @@
 3. In your browser go to **Manage Extensions**.
 4. Make sure **Developer Mode** is enabled.
 5. Click on **Load unpacked** and select the folder that contains the extension files.  
-![Manage Extensions](../qsp-helper/docs/images/manage-extensions.png "Manage Extensions")
+![Manage Extensions](./docs/images/manage-extensions.png "Manage Extensions")
