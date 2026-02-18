@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="popup.css" />
+<html>
+  <body>
+    <h3>Query Params</h3>
+
+    <textarea
+      id="params-to-add"
+      rows="4"
+      placeholder='feature_enabled=true&feature_options={"amount": 3}'
+    ></textarea>
+
+    <div class="controlsContainer">
+      <div class="leftControls">
+        <button id="apply" class="query">✔️ Apply</button>
+        <button id="save" class="query">💾 Save</button>
+      </div>
+      <div class="rightControls">
+        <button id="clear" class="clear query" >🧹 Clear</button>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <div id="preset-container">
+      <h4>Saved Presets</h4>
+      <ul id="preset-list" style="padding-left: 16px;"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

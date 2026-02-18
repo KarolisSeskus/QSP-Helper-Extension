@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "QSP Helper",
+  "version": "0.1.0",
+  "description": "Adds query string parameters to the current URL for easier testing.",
+  "icons": {
+    "64": "images/construction-hat.png"
+  },
+  "permissions": ["tabs", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

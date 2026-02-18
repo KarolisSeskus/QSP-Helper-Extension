@@ -1,0 +1,66 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  width: 320px; 
+}
+
+textarea {
+  width: 100%; 
+  max-width: 320px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.query {
+  padding: 4px 8px;
+  border-width: 1px;
+  border-radius: 3px;
+  border-style: solid;
+}
+
+button.clear {
+  display: block; 
+  margin:auto; 
+  margin-right: 0px;
+}
+
+button.remove {
+  margin-left: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 0px 4px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333333;
+  color: #333333;
+}
+
+.hide {
+  display: none;
+}
+
+.presetLabel {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.controlsContainer {
+  display: flex;
+  margin-top: 8px;
+}
+
+.leftControls {
+  position: relative; 
+  display: flex; 
+  width: 100%; 
+  column-gap: 8px;
+}
+
+.rightControls {
+  position: relative; 
+  width: 100%;
+}
+
