@@ -45,6 +45,15 @@ document.getElementById("clear").addEventListener("click", async () => {
   document.getElementById("params-to-add").value = "";
 });
 
+document.getElementById("get").addEventListener("click", async () => {
+  const tab = await getCurrentTab();
+  const url = new URL(tab.url);
+  const params = Array.from(url.searchParams.entries())
+    .map(([key, value]) => `${key}=${value}`)
+    .join("&");
+  document.getElementById("params-to-add").value = params;
+});
+
 function renderPresets() {
   chrome.storage.local.get({ presets: [] }, data => {
     const savePresetsElement = document.getElementById("preset-container");

@@ -12,17 +12,11 @@ button {
   cursor: pointer;
 }
 
-button.query {
+button.control {
   padding: 4px 8px;
   border-width: 1px;
   border-radius: 3px;
   border-style: solid;
-}
-
-button.clear {
-  display: block; 
-  margin:auto; 
-  margin-right: 0px;
 }
 
 button.remove {
@@ -52,7 +46,7 @@ hr {
   margin-top: 8px;
 }
 
-.leftControls {
+.controls {
   position: relative; 
   display: flex; 
   width: 100%; 
@@ -60,7 +54,6 @@ hr {
 }
 
 .rightControls {
-  position: relative; 
-  width: 100%;
+  justify-content: flex-end;
 }
 
