@@ -1,4 +1,8 @@
-# How to Install
+# The Extension
+
+![Extension](./docs/images/extension-view.png "Extensions")
+
+## How to Install
 
 1. Download the latest release.
 2. Unzip the archive to the location where you want to keep the extension files.
