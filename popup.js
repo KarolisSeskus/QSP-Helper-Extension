@@ -47,12 +47,16 @@ document.getElementById("clear").addEventListener("click", async () => {
 
 document.getElementById("get").addEventListener("click", async () => {
   const tab = await getCurrentTab();
+  populateParamsFromTab(tab);
+});
+
+function populateParamsFromTab(tab) {
   const url = new URL(tab.url);
   const params = Array.from(url.searchParams.entries())
     .map(([key, value]) => `${key}=${value}`)
     .join("&");
   document.getElementById("params-to-add").value = params;
-});
+}
 
 function renderPresets() {
   chrome.storage.local.get({ presets: [] }, data => {
@@ -101,5 +105,12 @@ function deletePreset(id) {
     chrome.storage.local.set({ presets }, renderPresets);
   });
 }
+
+async function initialize() {
+  const tab = await getCurrentTab();
+  populateParamsFromTab(tab);
+}
+
+initialize();
 
 renderPresets();
