@@ -10,3 +10,8 @@
 4. Make sure **Developer Mode** is enabled.
 5. Click on **Load unpacked** and select the folder that contains the extension files.  
 ![Manage Extensions](./docs/images/manage-extensions.png "Manage Extensions")
+
+## How to Update (to maintain presets)
+
+1. Locate where you initially installed the extension.
+2. Replace the old extension files with the new ones from the downloaded zip file.
