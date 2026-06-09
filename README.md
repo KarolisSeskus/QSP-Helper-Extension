@@ -4,7 +4,7 @@
 
 ## How to Install
 
-1. Download the latest release.
+1. Download the [latest release](https://github.com/KarolisSeskus/QSP-Helper-Extension/releases).
 2. Unzip the archive to the location where you want to keep the extension files.
 3. In your browser go to **Manage Extensions**.
 4. Make sure **Developer Mode** is enabled.
